@@ -8,10 +8,29 @@
     <link rel="stylesheet" href="sunflower.css">
 </head>
 <body>
-    <div class="start-container">
-        <p class="start-text">Clique no girassol para começar</p>
-        <a href="questions.html" class="start-btn"><img src="./img/sunicon.png" class="sun-img"></a>
-    </div>
+    <div class="container">
+        <h1 id="headline">Lia Day 💛</h1>
+        <div id="countdown">
+          <ul>
+            <li><span id="days"></span>giorni</li>
+            <li><span id="hours"></span>ore</li>
+            <li><span id="minutes"></span>minuti</li>
+            <li><span id="seconds"></span>secondi</li>
+          </ul>
+          <a href="#" id="lockedpadlock" onclick="document.getElementById('padlock').src='./img/clown.png'; document.getElementById('memetexto').style.display='block'"><img src="./img/locked.png" id="padlock" class="padlock"></a>
+          <p class="memetexto" id="memetexto">Errou o dia, linda KKKKK</p>
+        </div>
+        <div id="content" class="emoji">
+          <span>🥳</span>
+          <span>🎉</span>
+          <span>🎂</span>
+          <span>♎</span>   
+          <p>*bolo zero lactose</p>
+          <a href="#" id="unlockedpadlock" onclick="document.getElementById('my_audio').play(); document.getElementById('aberto').src='./img/katy.jpg';"><img src="./img/unlocked.png" id="aberto" class="padlock"></a>
+        <audio id="my_audio"><source src="birthday.mp3" autoplay="autoplay" loop="loop" type="audio/mpeg"></audio>
+        <a href="#" id="katySong"><img src="./img/katy.jpg" id="katySong" class="katy"></a>
+        </div>
+      </div>
     <img src="./img/girassois.png" class="sunflower-background">
 <script src="index.js"></script>   
 </body>
